@@ -2,20 +2,12 @@ server:
   port: 8080
 
 lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.5"
+      repository: "https://maven.lavalink.dev/releases"
+
   server:
     password: "youshallnotpass"
-    sources:
-      youtube: false
-      soundcloud: true
-      bandcamp: true
-      twitch: true
-      vimeo: true
-      http: true
-      local: false
-
-plugins:
-  - dependency: "dev.lavalink.youtube:youtube-plugin:1.11.5"
-    repository: "https://maven.lavalink.dev/releases"
 
 youtubePlugin:
   enabled: true
