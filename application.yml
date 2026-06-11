@@ -3,7 +3,7 @@ server:
 
 lavalink:
   server:
-    password: "youshallnotpass"
+    password: "TESTPASSWORD123"
     sources:
       youtube: false
       soundcloud: true
@@ -14,19 +14,19 @@ lavalink:
       local: false
 
 plugins:
-  youtube:
-    enabled: true
-    allowSearch: true
-    allowDirectVideoIds: true
-    clients:
-      - MUSIC
-      - WEB
-      - WEBEMBEDDED
-      - TVHTML5EMBEDDED
-
   dependencies:
     - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.2"
       repository: "https://maven.lavalink.dev/releases"
+
+youtubePlugin:
+  enabled: true
+  allowSearch: true
+  allowDirectVideoIds: true
+  clients:
+    - MUSIC
+    - WEB
+    - WEBEMBEDDED
+    - TVHTML5EMBEDDED
 
 metrics:
   prometheus:
