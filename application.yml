@@ -14,8 +14,19 @@ lavalink:
       local: false
 
 plugins:
-  - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.2"
-    repository: "https://maven.lavalink.dev/releases"
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    clients:
+      - MUSIC
+      - WEB
+      - WEBEMBEDDED
+      - TVHTML5EMBEDDED
+
+  dependencies:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.2"
+      repository: "https://maven.lavalink.dev/releases"
 
 metrics:
   prometheus:
